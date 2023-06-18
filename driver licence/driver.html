@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ehliyet Alabilir Miyim ?</title>
+</head>
+<body>
+    
+    <h1 id="head">Ehliyet Alabilir Miyim ?</h1>
+    
+    <p>Ehliyet Alabilir Miyim ?</p>
+    
+    <p id="info"></p>
+    
+    <script>
+    
+    let userName = prompt("Kullanıcı Adınızı Giriniz")
+    let age = prompt("Yaşınızı Giriniz")
+    
+    let info = document.querySelector("#info")
+    
+    if (userName && age >= 18){
+        info.innerHTML = "Ehliyet Alabilirsiniz :)"
+    }
+        else if (!userName) {
+            info.innerHTML = "Kullanıcı Adınız Bulunamadı."
+        }
+        
+        else if (!(age >= 18)) {
+            info.innerHTML = "Yaş Bilginiz Bulunamadı veya Yaşınız Küçük"
+        }
+        
+       
+    
+    </script>
+    
+</body>
+</html>
